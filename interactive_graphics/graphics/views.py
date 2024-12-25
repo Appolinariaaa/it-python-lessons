@@ -20,4 +20,4 @@ def interactive_graphic(request):
     # Save the Plotly graph as a standalone HTML file
     graph_html = opy.plot(fig, auto_open=False, output_type='div')
 
-    return render(request, 'interactive_graphic.html', {'graph_html': graph_html})
+    return render(request, 'graphics\templates\interactive_graphic.html', {'graph_html': graph_html})
